@@ -1,0 +1,1 @@
+an assets folder is usually used for static items such as stylesheets, local fonts, some images

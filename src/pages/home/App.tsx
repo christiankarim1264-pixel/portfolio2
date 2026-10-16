@@ -1,14 +1,16 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+import heroImg from '../../assets/hero.png'
+import reactLogo from '../../assets/react.svg'
+import viteLogo from '../../assets/vite.svg'
 import './App.css'
+import WPHero from '../../components/WPHero'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <WPHero/>
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
@@ -17,6 +19,7 @@ function App() {
         </div>
         <div>
           <h1>Get started</h1>
+          <h3 className='flex text-xl font-semibold uppercase border roudned-full py-2 px-4 hover:bg-blue-200 hover:px-16'>with Tailwindcss</h3>
           <p>
             Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
           </p>
